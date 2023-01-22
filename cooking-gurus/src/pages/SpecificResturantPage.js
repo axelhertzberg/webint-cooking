@@ -4,7 +4,7 @@ import {findRest} from "../utils";
 import {Row} from "react-bootstrap";
 import RestaurantDishes from "../components/ResturantDishes";
 import {Container} from "react-bootstrap";
-
+import HomeButton from "../components/HomeButton";
 
 export default function SpecificResturantPage() {
 
@@ -15,8 +15,7 @@ export default function SpecificResturantPage() {
 
     return (
         <Container>
-            {specificResturant.resturantname}
-
+            <HomeButton />
             <Row>
                 <h1>Starters</h1>
                 <RestaurantDishes specificResturantMenuType={specificResturant.menu.starters}/>
