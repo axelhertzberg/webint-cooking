@@ -1,8 +1,7 @@
 import React from 'react'
-import {Container} from 'react-bootstrap'
 import {restaurantsdata} from '../data/data.js'
 import ResturantCard from "../components/ResturantCard";
-import {Row, Col} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 
 
 export default function RestaurantsPage() {
@@ -11,20 +10,15 @@ export default function RestaurantsPage() {
 
     return (
         <Container>
-            {restaurantsdata.map((restaurant, index) => {
-                return index % 2 === 0 ? (
-                    <Row key={index} style={{display: 'flex', justifyContent: 'center'}}>
-                        <Col>
+            <Row>
+                {restaurantsdata.map((restaurant, index) => {
+                    return (
+                        <Col xs={6} key={index} style={{padding: "1%"}}>
                             <ResturantCard restaurant={restaurant}/>
                         </Col>
-                        {(index + 1 < restaurantsdata.length) &&
-                            <Col>
-                                <ResturantCard restaurant={restaurantsdata[index + 1]}/>
-                            </Col>
-                        }
-                    </Row>
-                ) : null;
-            })}
-    </Container>
-  )
+                    );
+                })}
+            </Row>
+        </Container>
+    )
 }
