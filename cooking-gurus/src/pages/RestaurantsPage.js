@@ -2,6 +2,7 @@ import React from 'react'
 import {Container} from 'react-bootstrap'
 import {restaurantsdata} from '../data/data.js'
 import ResturantCard from "../components/ResturantCard";
+import {Row, Col} from 'react-bootstrap'
 
 
 export default function RestaurantsPage() {
@@ -10,13 +11,22 @@ export default function RestaurantsPage() {
 
     return (
         <Container>
-
-            <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:"center"}}>
-                {restaurantsdata.map(restaurant => {
-                    return <ResturantCard restaurant={restaurant}/>
-                })}
-            </div>
-
-        </Container>
-    )
+            {restaurantsdata.map((restaurant, index) => {
+                if (index % 2 === 0) {
+                    return (
+                        <Row key={index} style={{ display: 'flex', justifyContent: 'center'}}>
+                            <Col>
+                                <ResturantCard restaurant={restaurant}/>
+                            </Col>
+                        {(index + 1 < restaurantsdata.length) &&
+                            <Col>
+                                <ResturantCard restaurant={restaurantsdata[index + 1]}/>
+                            </Col>
+                        }
+                        </Row>
+                    )
+                }
+            })}
+    </Container>
+  )
 }
