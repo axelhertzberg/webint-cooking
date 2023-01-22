@@ -2,14 +2,13 @@ import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
 import React from "react";
 import {Rating} from "primereact/rating";
-import {Container} from "react-bootstrap";
 
 export default function RestaurantDishes({specificResturantMenuType}) {
 
     const ratingComponent = (dish) => {
 
         return (
-            <Container>
+            <React.Fragment>
                 <p> TASTE </p>
                 <Rating value={dish.rating.taste} readOnly cancel={false}/>
 
@@ -18,14 +17,14 @@ export default function RestaurantDishes({specificResturantMenuType}) {
 
                 <p> LOOK </p>
                 <Rating value={dish.rating.eyes_rating} readOnly cancel={false}/>
+            </React.Fragment>
 
-            </Container>
         )
     }
 
     return (
 
-        <DataTable value={specificResturantMenuType}>
+        <DataTable value={specificResturantMenuType} style={{maxWidth: "75vw"}}>
             <Column field="name" header="Name"></Column>
             <Column field="price" header="Price"></Column>
             <Column field="description" header="Description"></Column>

@@ -1,7 +1,7 @@
 import React from "react";
 import {useParams} from "react-router-dom";
 import {findRest} from "../utils";
-import {Row, Col} from "react-bootstrap";
+import {Row} from "react-bootstrap";
 import RestaurantDishes from "../components/ResturantDishes";
 import {Container} from "react-bootstrap";
 
@@ -14,14 +14,12 @@ export default function SpecificResturantPage() {
     console.log(specificResturant)
 
     return (
-        <Container style={{maxWidth: "80vw"}}>
+        <Container>
             {specificResturant.resturantname}
 
-            <Row md={2} style={{"justify-content":"center"}}>
-                <Col xs sm={2}>
-                    <h1>Starters</h1>
-                    <RestaurantDishes specificResturantMenuType={specificResturant.menu.starters}/>
-                </Col>
+            <Row>
+                <h1>Starters</h1>
+                <RestaurantDishes specificResturantMenuType={specificResturant.menu.starters}/>
             </Row>
 
             <Row>
