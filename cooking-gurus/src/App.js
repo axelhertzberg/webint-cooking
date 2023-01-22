@@ -9,9 +9,8 @@ import "primereact/resources/primereact.min.css";                  //core css
 import "primeicons/primeicons.css";                                //icons
 
 function App() {
-
   return (
-    <Container >
+    <Container style={{marginTop: "1%"}}>
         <Routes>
             <Route path="/" element={<RestaurantsPage />} />
             <Route path="/:restaurant" element={<SpecificResturantPage />}/>

@@ -5,6 +5,7 @@ import RestaurantDishes from "../components/ResturantDishes";
 import {Container} from "react-bootstrap";
 import {Card} from "primereact/card";
 
+import HomeButton from "../components/HomeButton";
 
 export default function SpecificResturantPage() {
 
@@ -13,10 +14,12 @@ export default function SpecificResturantPage() {
 
     return (
         <Container>
+            <HomeButton />
             <h1> Restaurant: {specificResturant.resturantname}</h1>
 
-
             <Card style={{marginTop:"5%"}} title="Starters">
+
+
                 <RestaurantDishes specificResturantMenuType={specificResturant.menu.starters}/>
             </Card>
 
