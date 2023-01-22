@@ -12,8 +12,7 @@ export default function RestaurantsPage() {
     return (
         <Container>
             {restaurantsdata.map((restaurant, index) => {
-                if (index % 2 === 0) {
-                    return (
+                return index % 2 === 0 ? (
                         <Row key={index} style={{ display: 'flex', justifyContent: 'center'}}>
                             <Col style={{ padding: '1%' }}>
                                 <ResturantCard restaurant={restaurant}/>
@@ -23,9 +22,8 @@ export default function RestaurantsPage() {
                                 <ResturantCard restaurant={restaurantsdata[index + 1]}/>
                             </Col>
                         }
-                        </Row>
-                    )
-                }
+                    </Row>
+                ) : null;
             })}
     </Container>
   )
