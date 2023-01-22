@@ -18,9 +18,8 @@ export default function ResturantCard({restaurant}) {
         <Card title={restaurant.resturantname}
               subTitle={restaurant.location}
               footer={footer(restaurant.resturantname)}
-              style={{width: '500px'}}
-              >
-            {restaurant.resturantname}
+              style={{minWidth:"25vw"}}>
+            {restaurant.type}
         </Card>
     )
 }
