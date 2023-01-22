@@ -21,7 +21,7 @@ export default function RestaurantsPage() {
             <Row>
             <InputText
                 type="text"
-                placeholder="Search..."
+                placeholder="Search for a restaurant name..."
                 value={searchValue}
                 onChange={handleSearch}
             />

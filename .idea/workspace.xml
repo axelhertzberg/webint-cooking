@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b519d55e-e063-4c71-8b54-07a48057d40e" name="Changes" comment="merged done errors fix">
-      <change afterPath="$PROJECT_DIR$/cooking-gurus/src/components/DishReview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cooking-gurus/src/components/ResturantDishes.js" beforeDir="false" afterPath="$PROJECT_DIR$/cooking-gurus/src/components/ResturantDishes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cooking-gurus/src/pages/RestaurantsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cooking-gurus/src/pages/RestaurantsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cooking-gurus/src/pages/SpecificResturantPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cooking-gurus/src/pages/SpecificResturantPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +17,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="master" />
+    <option name="BRANCH" value="alan" />
   </component>
   <component name="Git.Rebase.Settings">
     <option name="NEW_BASE" value="origin/master" />
@@ -41,16 +38,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ah/eurecom/webint/webint-cooking",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ah/eurecom/webint/webint-cooking&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674404965121</updated>
-      <workItem from="1674404966306" duration="8550000" />
+      <workItem from="1674404966306" duration="8925000" />
     </task>
     <task id="LOCAL-00001" summary="merged done errors fix">
       <created>1674406198888</created>
