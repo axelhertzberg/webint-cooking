@@ -1,36 +1,56 @@
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
-import React from "react";
+import React, {useState} from "react";
 import {Rating} from "primereact/rating";
+import {Container, Modal} from "react-bootstrap";
+import {Button} from "primereact/button";
+import DishReview from "./DishReview";
+
 
 export default function RestaurantDishes({specificResturantMenuType}) {
 
-    const ratingComponent = (dish) => {
 
+    const [showReviewModal, setShowReviewModal] = useState(false)
+    const [dishToReview, setDishToReview] = useState(null)
+
+    const handleShowDish = (rowData) => {
         return (
-            <React.Fragment>
-                <p> TASTE </p>
-                <Rating value={dish.rating.taste} readOnly cancel={false}/>
+            <Button label="Show" onClick={() => {
+                setDishToReview(rowData)
+                setShowReviewModal(true)
+            }
+            }/>
+        )
 
-                <p> PRICE </p>
-                <Rating value={dish.rating.price_rating} readOnly cancel={false}/>
+    }
 
-                <p> LOOK </p>
-                <Rating value={dish.rating.eyes_rating} readOnly cancel={false}/>
-            </React.Fragment>
+
+    const ratingComponent = (dish) => {
+        return (
+            <Container>
+                <p> TASTE: <Rating value={dish.rating.taste} readOnly cancel={false}/></p>
+                <p> PRICE <Rating value={dish.rating.price_rating} readOnly cancel={false}/></p>
+                <p> LOOK <Rating value={dish.rating.eyes_rating} readOnly cancel={false}/></p>
+            </Container>
 
         )
     }
 
     return (
+        <React.Fragment>
+            <DataTable value={specificResturantMenuType} style={{maxWidth: "75vw"}}>
+                <Column field="name" header="Name"></Column>
+                <Column field="price" header="Price"></Column>
+                <Column field="description" header="Description"></Column>
+                <Column field="rating" header="Rating" body={ratingComponent}></Column>
+                <Column header="Reviews" body={handleShowDish}></Column>
+            </DataTable>
 
-        <DataTable value={specificResturantMenuType} style={{maxWidth: "75vw"}}>
-            <Column field="name" header="Name"></Column>
-            <Column field="price" header="Price"></Column>
-            <Column field="description" header="Description"></Column>
-            <Column field="rating" header="Rating" body={ratingComponent}></Column>
-        </DataTable>
 
+            <Modal size="xl" show={showReviewModal} onHide={() => setShowReviewModal(false)}>
+                <DishReview dish={dishToReview} />
+            </Modal>
+        </React.Fragment>
 
     );
 }

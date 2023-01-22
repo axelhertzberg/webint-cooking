@@ -6,8 +6,6 @@ import {Container, Row, Col} from 'react-bootstrap'
 
 export default function RestaurantsPage() {
 
-    console.log(restaurantsdata)
-
     return (
         <Container>
             <Row>

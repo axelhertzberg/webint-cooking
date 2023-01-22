@@ -1,9 +1,9 @@
 import React from "react";
 import {useParams} from "react-router-dom";
 import {findRest} from "../utils";
-import {Row} from "react-bootstrap";
 import RestaurantDishes from "../components/ResturantDishes";
 import {Container} from "react-bootstrap";
+import {Card} from "primereact/card";
 
 
 export default function SpecificResturantPage() {
@@ -11,26 +11,22 @@ export default function SpecificResturantPage() {
     const restParam = useParams()
     const specificResturant = findRest(restParam.restaurant)
 
-    console.log(specificResturant)
-
     return (
         <Container>
-            {specificResturant.resturantname}
+            <h1> Restaurant: {specificResturant.resturantname}</h1>
 
-            <Row>
-                <h1>Starters</h1>
+
+            <Card style={{marginTop:"5%"}} title="Starters">
                 <RestaurantDishes specificResturantMenuType={specificResturant.menu.starters}/>
-            </Row>
+            </Card>
 
-            <Row>
-                <h1> Main Dishes</h1>
+            <Card style={{marginTop:"5%"}} title="Main Dishes">
                 <RestaurantDishes specificResturantMenuType={specificResturant.menu.main_dish}/>
-            </Row>
+            </Card>
 
-            <Row>
-                <h1> Desserts </h1>
+            <Card style={{marginTop:"5%"}} title="Desserts">
                 <RestaurantDishes specificResturantMenuType={specificResturant.menu.desserts}/>
-            </Row>
+            </Card>
         </Container>
     )
 }
