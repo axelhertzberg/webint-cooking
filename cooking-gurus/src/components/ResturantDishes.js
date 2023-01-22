@@ -21,7 +21,6 @@ export default function RestaurantDishes({specificResturantMenuType}) {
             }
             }/>
         )
-
     }
 
 
@@ -35,7 +34,6 @@ export default function RestaurantDishes({specificResturantMenuType}) {
 
         )
     }
-
     return (
         <React.Fragment>
             <DataTable value={specificResturantMenuType} style={{maxWidth: "75vw"}}>
@@ -47,8 +45,9 @@ export default function RestaurantDishes({specificResturantMenuType}) {
             </DataTable>
 
 
-            <Modal size="xl" show={showReviewModal} onHide={() => setShowReviewModal(false)}>
-                <DishReview dish={dishToReview} />
+            <Modal size="xl"  show={showReviewModal} onHide={() => setShowReviewModal(false)}  >
+                <Modal.Header closeButton />
+                <DishReview dish={dishToReview}/>
             </Modal>
         </React.Fragment>
 
