@@ -8,7 +8,7 @@ export default function ResturantCard({restaurant}) {
     const navigate = useNavigate()
 
     const footer = (rest) => {
-        return (<Button label="Visit" onClick={(restaurant) => {
+        return (<Button label="Visit" onClick={() => {
             navigate(rest)
         }
         }/>)
@@ -17,7 +17,7 @@ export default function ResturantCard({restaurant}) {
     return (
         <Card title={restaurant.resturantname}
               subTitle={restaurant.location}
-              footer={footer(restaurant.resturantname)}>
+              footer={footer(restaurant.resturantname)}
               style={{width: '500px'}}
               >
             {restaurant.resturantname}
