@@ -19,12 +19,15 @@ export default function RestaurantsPage() {
         <Container>
             <HomeButton />
             <Row>
-            <InputText
-                type="text"
-                placeholder="Search for a restaurant name..."
-                value={searchValue}
-                onChange={handleSearch}
-            />
+                <Col>
+                    <InputText
+                        type="text"
+                        placeholder="Search for a restaurant name..."
+                        value={searchValue}
+                        onChange={handleSearch}
+                        style={{width: "100%"}}
+                    />
+                </Col>
             </Row>
             <Row>
                 {filteredData.map((restaurant, index) => {
