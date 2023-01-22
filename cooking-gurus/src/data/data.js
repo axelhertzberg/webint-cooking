@@ -49,6 +49,7 @@ resturantname: string {
 
 export const restaurantsdata = [
     {
+        restaurantid: "the_green_room",
         resturantname: "The Green Room",
         location: "New York",
         type: "Italian",
@@ -128,6 +129,7 @@ export const restaurantsdata = [
         }
     },
     {
+        restaurantid: "the_red_room",
         resturantname: "The Red Room",
         location: "Los Angeles",
         type: "Mexican",
@@ -197,6 +199,7 @@ export const restaurantsdata = [
     },
 
     {
+        restaurantid: "pho_king",
         resturantname: "Pho King",
         location: "Houston, TX",
         type: "Vietnamese",
@@ -277,6 +280,7 @@ export const restaurantsdata = [
     },
 
     {
+        restaurantid: "the_curry_house",
         resturantname: "The Curry House",
         location: "Chicago, IL",
         type: "Indian",
@@ -356,6 +360,7 @@ export const restaurantsdata = [
         }
     },
     {
+        restaurantid: "the_golden_wok",
         resturantname: "The Golden Wok",
         location: "San Francisco",
         type: "Chinese",
@@ -436,6 +441,7 @@ export const restaurantsdata = [
     },
 
     {
+        restaurantid: "the_jade_palace",
         resturantname: "The Jade Palace",
         location: "Los Angeles",
         type: "Chinese",
@@ -516,7 +522,7 @@ export const restaurantsdata = [
     },
 
     {
-        resturantname: "The Sizzling Wok",
+        restaurantid: "the_sizzling_wok",resturantname: "The Sizzling Wok",
         location: "Chicago",
         type: "Chinese",
         menu: {
@@ -595,7 +601,7 @@ export const restaurantsdata = [
         }
     },
     {
-        resturantname: "The Pizza Palace",
+        restaurantid: "the_pizza_palace",resturantname: "The Pizza Palace",
         location: "New York",
         type: "Italian",
         menu: {
@@ -673,7 +679,7 @@ export const restaurantsdata = [
             ]
         }
     },
-    {
+    {restaurantid: "sushi_paradise",
         "resturantname": "Sushi Paradise",
         "location": "Los Angeles",
         "type": "Japanese",
@@ -752,7 +758,7 @@ export const restaurantsdata = [
             ]
         }
     },
-    {
+    {restaurantid: "the_curry_house2",
         "resturantname": "The Curry House",
         "location": "London",
         "type": "Indian",
@@ -832,7 +838,7 @@ export const restaurantsdata = [
         }
     },
     {
-        "resturantname": "The Swedish Table",
+        restaurantid: "the_swedish_table","resturantname": "The Swedish Table",
         "location": "Stockholm",
         "type": "Swedish",
         "menu": {
@@ -910,7 +916,7 @@ export const restaurantsdata = [
             ]
         }
     },
-    {
+    {restaurantid: "fjelltoppen_kjøkken",
         "resturantname": "Fjelltoppen Kjøkken",
         "location": "Oslo",
         "type": "Norwegian",
@@ -989,6 +995,8 @@ export const restaurantsdata = [
             ]
         }
     }
+
+
 
 
 ]
