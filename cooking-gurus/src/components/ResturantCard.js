@@ -1,20 +1,24 @@
 import React from 'react'
 import {Card} from "primereact/card"
 import {Button} from "primereact/button";
+import {useNavigate} from "react-router-dom";
 
 export default function ResturantCard({restaurant}) {
 
-    const footer = () => {
-        return(<Button label="Visit" onClick={(restaurant) => console.log(restaurant.id)}/>)
-    }
+    const navigate = useNavigate()
 
+    const footer = (rest) => {
+        return (<Button label="Visit" onClick={() => {
+            navigate(rest)
+        }
+        }/>)
+    }
 
     return (
         <Card title={restaurant.resturantname}
               subTitle={restaurant.location}
-              footer={footer}
-              style={{width: '500px'}}
-              >
+              footer={footer(restaurant.resturantname)}
+              style={{minWidth:"25vw"}}>
             {restaurant.resturantname}
         </Card>
     )
