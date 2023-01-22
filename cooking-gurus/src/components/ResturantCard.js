@@ -8,7 +8,6 @@ export default function ResturantCard({restaurant}) {
         return(<Button label="Visit" onClick={(restaurant) => console.log(restaurant.id)}/>)
     }
 
-
     return (
         <Card title={restaurant.resturantname}
               subTitle={restaurant.location}

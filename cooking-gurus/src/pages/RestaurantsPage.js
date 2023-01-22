@@ -15,11 +15,11 @@ export default function RestaurantsPage() {
                 if (index % 2 === 0) {
                     return (
                         <Row key={index} style={{ display: 'flex', justifyContent: 'center'}}>
-                            <Col>
+                            <Col style={{ padding: '1%' }}>
                                 <ResturantCard restaurant={restaurant}/>
                             </Col>
                         {(index + 1 < restaurantsdata.length) &&
-                            <Col>
+                            <Col style={{ padding: '1%' }}>
                                 <ResturantCard restaurant={restaurantsdata[index + 1]}/>
                             </Col>
                         }
