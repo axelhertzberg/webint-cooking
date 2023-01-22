@@ -21,3 +21,13 @@ code {
     margin-bottom: 16px;
   }
 }
+
+/* STYLES*/
+
+.menurows {
+  padding: 20px;
+  background-color: #ff0000;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-bottom: 20px;
+}

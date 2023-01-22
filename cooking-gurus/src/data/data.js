@@ -61,7 +61,7 @@ export const restaurantsdata = [
                     description: "Tomato, basil, and balsamic glaze on toasted bread",
                     rating: {
                         taste: 4,
-                        price_rating: 3,
+                        price_rating: 3.5,
                         eyes_rating: 2,
                         text_rating: "Nice"
                     }

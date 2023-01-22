@@ -9,14 +9,10 @@ export default function RestaurantsPage() {
     console.log(restaurantsdata)
 
     return (
-        <Container>
-
-            <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:"center"}}>
-                {restaurantsdata.map(restaurant => {
-                    return <ResturantCard restaurant={restaurant}/>
-                })}
-            </div>
-
+        <Container fluid style={{height: "85vh", width: "80vw"}}>
+            {restaurantsdata.map(restaurant => {
+                return <ResturantCard restaurant={restaurant} key={restaurant.resturantname}/>
+            })}
         </Container>
     )
 }
