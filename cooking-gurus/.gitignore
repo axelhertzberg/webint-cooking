@@ -23,3 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 /.idea/modules.xml
 /.idea/cooking-gurus.iml
+/.idea/
