@@ -7,7 +7,7 @@ import "primeicons/primeicons.css";                                //icons
 function App() {
 
   return (
-    <Container >
+    <Container fluid>
       <RestaurantsPage />
     </Container>
   );

@@ -13,7 +13,8 @@ export default function ResturantCard({restaurant}) {
         <Card title={restaurant.resturantname}
               subTitle={restaurant.location}
               footer={footer}
-              style={{flexBasis: 'calc(50% - 16px)'}}>
+              style={{width: '500px'}}
+              >
             {restaurant.resturantname}
         </Card>
     )
