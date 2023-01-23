@@ -7,7 +7,7 @@ export default function HomeButton() {
             <Button 
                 className='home-button' 
                 label="Home" icon="pi pi-home" 
-                onClick={() => window.location.href = '/'}/>
+                onClick={() => window.location.href = '/webint-cooking'}/>
         </div>
     )
 }
