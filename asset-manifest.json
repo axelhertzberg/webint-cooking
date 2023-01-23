@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/webint-cooking/static/css/main.b4e536cb.css",
+    "main.js": "/webint-cooking/static/js/main.dc3b6414.js",
+    "static/media/primeicons.svg": "/webint-cooking/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/primeicons.eot": "/webint-cooking/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/webint-cooking/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/webint-cooking/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/primeicons.woff2": "/webint-cooking/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "index.html": "/webint-cooking/index.html",
+    "main.b4e536cb.css.map": "/webint-cooking/static/css/main.b4e536cb.css.map",
+    "main.dc3b6414.js.map": "/webint-cooking/static/js/main.dc3b6414.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4e536cb.css",
+    "static/js/main.dc3b6414.js"
+  ]
+}
