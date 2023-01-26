@@ -1,6 +1,7 @@
 import React from "react"
 import {allStorage} from "../utils";
 import {useNavigate} from "react-router-dom";
+import {Button} from "primereact/button";
 
 
 export default function FavoritesList() {
@@ -11,6 +12,7 @@ export default function FavoritesList() {
 
     return (
         <React.Fragment>
+            <Button label="Close" style={{ position:"absolute", top: 5, right:1}}/>
             <ul>
                 {favorites.map((rest) => {
                     if (rest.restaurantid) {

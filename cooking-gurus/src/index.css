@@ -21,11 +21,11 @@ ul {
 }
 
 li {
-    font-size: 1.2em; /* Increase the font size */
-    line-height: 1.5; /* Increase the line height for better readability */
+    font-size: 1.1em; /* Increase the font size */
+    line-height: 1.2; /* Increase the line height for better readability */
     border-radius: 10px;
     margin: 1em; /* Add some space between list items */
-    width: 30%; /* Set a fixed width for the list items */
+    width: 75%; /* Set a fixed width for the list items */
     text-align: center; /* Center the text within the list items */
     transition: all 0.3s ease; /* Add a transition effect for hover state */
 }
