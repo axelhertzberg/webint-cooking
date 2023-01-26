@@ -53,6 +53,7 @@ export const restaurantsdata = [
         resturantname: "The Green Room",
         location: "New York",
         type: "Italian",
+        image:"https://loremflickr.com/320/240/margharita",
         menu: {
             starters: [
                 {
@@ -133,6 +134,7 @@ export const restaurantsdata = [
         resturantname: "The Red Room",
         location: "Los Angeles",
         type: "Mexican",
+        image:"https://loremflickr.com/320/240/tacos",
         menu: {
             starters: [
                 {
@@ -203,6 +205,7 @@ export const restaurantsdata = [
         resturantname: "Pho King",
         location: "Houston, TX",
         type: "Vietnamese",
+        image:"https://loremflickr.com/320/240/Vietnamese",
         menu: {
             starters: [
                 {
@@ -284,6 +287,7 @@ export const restaurantsdata = [
         resturantname: "The Curry House",
         location: "Chicago, IL",
         type: "Indian",
+        image:"https://loremflickr.com/320/240/indian",
         menu: {
             starters: [
                 {
@@ -364,6 +368,7 @@ export const restaurantsdata = [
         resturantname: "The Golden Wok",
         location: "San Francisco",
         type: "Chinese",
+        image:"https://loremflickr.com/320/240/Chinese",
         menu: {
             starters: [
                 {
@@ -445,6 +450,7 @@ export const restaurantsdata = [
         resturantname: "The Jade Palace",
         location: "Los Angeles",
         type: "Chinese",
+        image:"https://loremflickr.com/320/240/dumplings",
         menu: {
             starters: [
                 {
@@ -525,6 +531,7 @@ export const restaurantsdata = [
         restaurantid: "the_sizzling_wok",resturantname: "The Sizzling Wok",
         location: "Chicago",
         type: "Chinese",
+        image:"https://loremflickr.com/320/240/noodle",
         menu: {
             starters: [
                 {
@@ -604,6 +611,7 @@ export const restaurantsdata = [
         restaurantid: "the_pizza_palace",resturantname: "The Pizza Palace",
         location: "New York",
         type: "Italian",
+        image:"https://loremflickr.com/320/240/pizza",
         menu: {
             starters: [
                 {
@@ -683,6 +691,7 @@ export const restaurantsdata = [
         "resturantname": "Sushi Paradise",
         "location": "Los Angeles",
         "type": "Japanese",
+        image:"https://loremflickr.com/320/240/sushi",
         "menu": {
             "starters": [
                 {
@@ -762,6 +771,7 @@ export const restaurantsdata = [
         "resturantname": "The Curry House",
         "location": "London",
         "type": "Indian",
+        image:"https://loremflickr.com/320/240/curry",
         "menu": {
             "starters": [
                 {
@@ -838,9 +848,11 @@ export const restaurantsdata = [
         }
     },
     {
-        restaurantid: "the_swedish_table","resturantname": "The Swedish Table",
+        restaurantid: "the_swedish_table",
+        "resturantname": "The Swedish Table",
         "location": "Stockholm",
         "type": "Swedish",
+        image:"https://loremflickr.com/320/240/meatballs",
         "menu": {
             "starters": [
                 {
@@ -920,6 +932,7 @@ export const restaurantsdata = [
         "resturantname": "Fjelltoppen Kjøkken",
         "location": "Oslo",
         "type": "Norwegian",
+        image:"https://loremflickr.com/320/240/salmon",
         "menu": {
             "starters": [
                 {

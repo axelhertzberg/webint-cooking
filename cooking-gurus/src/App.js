@@ -10,7 +10,7 @@ import "primeicons/primeicons.css";                                //icons
 
 function App() {
   return (
-    <Container style={{marginTop: "1%"}}>
+    <Container fluid style={{marginTop: "1%", width:"90vw"}}>
         <Routes>
             <Route path="/" element={<RestaurantsPage />} />
             <Route path="/:restaurant" element={<SpecificResturantPage />}/>
